@@ -1,0 +1,111 @@
+body {
+  color: #404040;
+  font-family: 'Helvetica Neue';
+}
+
+a {
+  color: #08c;
+  text-decoration: none;
+}
+  a:hover { text-decoration: underline; }
+
+header {
+  background-color: #08c;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 730px;
+}
+
+.form-container {
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+
+input {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 1.2em;
+  margin-right: 25px;
+  padding: 10px 3px;
+  width: 80%;
+}
+
+.submit {
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  background-color: #2fb149;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 13px 30px;
+  width: 5%;
+}
+  .submit:hover {
+    background-color: #289C3F;
+    text-decoration: none;
+  }
+  .submit:active { background-color: #25943B; }
+
+
+.loading-container,
+.result-container,
+.error-container {
+  display: none;
+}
+
+.loading-container {
+  background: url('/img/loading.gif') no-repeat;
+  margin: 0 auto;
+  width: 32px; height: 32px;
+}
+
+.result-container {
+  font-size: 2.5em;
+}
+  .result-container div div {
+    color: #666;
+    margin-top: 15px;
+    font-size: 0.6em;
+  }
+  .result-container span {
+    color: #444;
+    font-weight: bold;
+  }
+
+  .affirmative { color: #7bb928; }
+  .negative { color: #CB3D2D; }
+  .maybe { color: #9D3E74; }
+
+.error-container {
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+
+footer {
+  font-size: 0.9em;
+  padding-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
