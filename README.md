@@ -1,7 +1,7 @@
 # Will I Need Sunglasses?
 
 There's nothing I hate more than leaving my house without sunglasses on a cloudy day, only to be blinded by the sun's deceitful rays an hour later.
-This app aims to fix that problem once and for all! You tell the app where you are, and it will determine once and for all whether or not you'll need sunglasses for the day.
+This app aims to fix that problem once and for all! You tell the app where you are, and it will determine whether or not you'll need sunglasses for the day.
 
 ## Technical details
 The frontend uses a bit of JavaScript/[jQuery](http://jquery.com/), which submits data to a backend running [Sinatra](http://www.sinatrarb.com/).
