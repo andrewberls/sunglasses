@@ -19,9 +19,9 @@ function fail() {
 //
 // Helper for forecast HTML construction
 function build_forecast(forecast, temp) {
-  return "<div>Forecast is <span>" + forecast + "</span>" +
-    ", with a temp of <span>" + temp + "</span>." +
-  "</div>";
+  return div(function() {
+    return "Forecast is " + span(forecast) + ", with a temp of " + span(temp) + ".";
+  });
 }
 
 // Build and return result HTML to be displayed
@@ -34,7 +34,9 @@ function build_result(need, forecast, temp) {
   else
     text = 'Maybe?';
 
-  return "<div class='"+ need +"'>"+ text + build_forecast(forecast, temp) + "</div>";
+  return div({ class: need }, function() {
+    return text + build_forecast(forecast, temp);
+  });
 }
 
 // Got response from the server - display appropriate result (or error message)
